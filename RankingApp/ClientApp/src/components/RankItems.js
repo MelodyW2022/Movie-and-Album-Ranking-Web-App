@@ -7,23 +7,22 @@ const RankItems = () => {
 
     useEffect(() => {
         fetch(`item/${dataType}`)
-            .then((response) => response.json())
-            .then((data) => setItems(data))
-            .catch((error) => {
-                    console.error('Error fetching items:', error);
-                });
-    }, []);
+            .then((results) => {
+                return results.json();
+            })
+            .then(data => {
+                setItems(data);
+            })
+    }, [])
 
     return (
         <main>
-                {items !== null ? (
-                    items.map((item) => <h3 key={item.Id}>{item.Title}</h3>)
-                ) : (
-                    <div>Loading...</div>
-                )}
+                {
+                    (items != null) ? items.map((item) => <h3>{item.title}</h3>):<div>Loading...</div>
+                }
         </main>
 
-    );
-};
+    )
+}
 
 export default RankItems;
