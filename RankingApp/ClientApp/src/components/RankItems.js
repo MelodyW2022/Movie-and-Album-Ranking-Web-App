@@ -8,7 +8,7 @@ const RankItems = () => {
     useEffect(() => {
         fetch(`item/${dataType}`)
             .then((response) => response.json())
-            .then((data) => setItems(data)
+            .then((data) => setItems(data))
             .catch((error) => {
                     console.error('Error fetching items:', error);
                 });
