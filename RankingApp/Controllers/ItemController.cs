@@ -36,6 +36,9 @@ namespace RankingApp.Controllers
         public ItemModel[] Get(int itemType)
         {
             ItemModel[] items = Items.Where(i => i.ItemType == itemType).ToArray();
+            //proving loading... to user provides a better UX user experience
+            //create an artificial delay to the server
+            System.Threading.Thread.Sleep(2000);
             return items;
         }
     }

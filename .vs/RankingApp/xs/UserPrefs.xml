@@ -4,15 +4,31 @@
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
     <BreakpointStore />
   </MonoDevelop.Ide.DebuggingService.Breakpoints>
-  <MonoDevelop.Ide.ItemProperties.RankingApp PreferredExecutionTarget="/Applications/Google Chrome.app" FirstBuild="True" />
-  <MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.ItemProperties.RankingApp PreferredExecutionTarget="/Applications/Google Chrome.app" />
+  <MonoDevelop.Ide.Workbench ActiveDocument="RankingApp/ClientApp/src/setupProxy.js">
+    <Files>
+      <File FileName="RankingApp/ClientApp/src/setupProxy.js" Line="1" Column="1" />
+      <File FileName="RankingApp/Program.cs" Line="27" Column="1" />
+      <File FileName="RankingApp/Controllers/ItemController.cs" Line="39" Column="1" />
+      <File FileName="RankingApp/ClientApp/src/components/RankItems.js" Line="21" Column="70" />
+    </Files>
     <Pads>
       <Pad Id="ProjectPad">
         <State name="__root__">
-          <Node name="RankingApp" expanded="True">
-            <Node name="RankingApp" selected="True" />
+          <Node name="RankingApp">
+            <Node name="RankingApp">
+              <Node name="ClientApp">
+                <Node name="src">
+                  <Node name="setupProxy.js" selected="True" />
+                </Node>
+              </Node>
+              <Node name="Models" expanded="True" />
+            </Node>
           </Node>
         </State>
+      </Pad>
+      <Pad Id="MonoDevelop.Debugger.WatchPad">
+        <State />
       </Pad>
     </Pads>
   </MonoDevelop.Ide.Workbench>
